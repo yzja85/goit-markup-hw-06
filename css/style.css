@@ -940,7 +940,7 @@ padding-bottom: 30px;
 .footer-container{
   display: flex;
   align-items: baseline;
-  
+  justify-content: space-between;
 }
 
 .footer-logo {
