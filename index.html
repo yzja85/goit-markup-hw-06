@@ -118,7 +118,7 @@
                             
                             <div class="form-field">
                                 <label class="modal-form-comment" for="comment"> Комментарий </label>
-                                <textarea class="textarea-modal" name="comment" id="comment" rows="10" placeholder="Введите текст"></textarea>
+                                <textarea class="textarea-modal" name="comment" id="comment" rows="5"  placeholder="Введите текст"></textarea>
                             </div>
                             
                            <div class="form-checkbox">
@@ -136,9 +136,9 @@
                             
                             <button class="modal-btn" type="submit">Отправить</button>
                         </form>
-                   </div>
-                    <div class="section-1-icon ">
-                       <button class="button-icon " data-modal-close type="button">
+                   </div> 
+                    <div class="section-1-icon thumb">
+                       <button class="button-icon" data-modal-close type="button">
                         <svg class="section-1-close-icons" width="11" height="11">
                             <use href="./images/icons/5-symbol-defs.svg#icon-Vector"></use>
                         </svg>
@@ -501,7 +501,12 @@
             <div class="footer-join">
                 <h3 class="footer-join-title">Подпишитесь на рассылку</h3>
                <div class="footer-join-content" >
-                    <p class="footer-box-text">E-mail</p>
+                   <form>
+                        <div class="footer-form">
+                            <label for="mail"></label>
+                            <input class="footer-input-mail" type="e-mail" name="mail" id="mail" placeholder="E-mail">
+                        </div>
+                   </form>
                     <button class="footer-join-button">Подписаться
                         <svg class="footer-icon-join" width="24" height="24">
                             <use href="./images/icons/send-symbol-defs.svg#icon-icon-send"></use>

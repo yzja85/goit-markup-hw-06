@@ -318,7 +318,7 @@ background-color: #155c95;
   pointer-events: none;
 }
 .button-icon{
- 
+  position: absolute;
   width: 30px;
   height: 30px;
   border-radius: 50%;
@@ -332,14 +332,21 @@ background-color: #155c95;
   cursor: pointer;
 }
 .section-1-close-icons {
-  display: block;
+ 
   fill:var(--first-text-color);
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.section-1-icon:hover + .section-1-close-icons{
+.section-1-icon:hover .section-1-close-icons {
   fill: var(--accent-color);
 }
-
-
+.section-1-icon:focus .section-1-close-icons {
+  fill: var(--accent-color);
+}
+.thumb{
+  position: relative;
+}
 .modal {
   position: absolute;
   top: 50%;
@@ -350,7 +357,7 @@ background-color: #155c95;
   border-radius: 4px;
   background-color: #fff;
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
 }
 .modal-content{
   display: flex;
@@ -417,7 +424,7 @@ color: #757575;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   outline: none;
-
+  cursor: pointer;
   transition-property: border-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -456,7 +463,7 @@ color: #757575;
   outline: none;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
-
+  cursor: pointer;
   transition-property: border-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -473,12 +480,15 @@ color: #757575;
   letter-spacing: 0.01em;
   
   color: rgba(117, 117, 117, 0.5);
+  
 }
 
 .form-checkbox{
   position: relative;
   margin-top: 20px;
   margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
 }
 .modal-form-checkbox span {
  
@@ -529,7 +539,7 @@ align-items: center;
   border: none;
   margin-left: auto;
   margin-right: auto;
-  
+  cursor: pointer;
   letter-spacing: 0.06em;
   
   color: #FFFFFF;
@@ -1055,20 +1065,23 @@ padding-bottom: 30px;
 .footer-join-content{
   display: flex;
 }
-.footer-box-text{
+.footer-input-mail{
  padding-left: 16px;
   width: 358px;
   height: 50px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 20px;
-  letter-spacing: 0.03em;
-  display: flex;
-  align-items: center;
-  color: rgba(255, 255, 255, 0.6);
+  background-color:#2f303a; ;
+}
+.footer-input-mail::placeholder{
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 20px;
+letter-spacing: 0.03em;
+display: flex;
+align-items: center;
+color: rgba(255, 255, 255, 0.6);
 }
 .footer-join-button{
   padding-left: 29px;
