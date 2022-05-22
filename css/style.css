@@ -1020,8 +1020,6 @@ padding-bottom: 30px;
   margin-left: 10px;
 }
 .footer-icon-item{
- 
-
   width: 44px;
   height: 44px;
   border-radius: 50%;
@@ -1049,7 +1047,9 @@ padding-bottom: 30px;
  }
  .footer-join{
   margin-left: 93px;
- 
+ }
+ .footer-form{
+   display: flex;
  }
 .footer-join-title{
   font-style: normal;
@@ -1062,9 +1062,7 @@ padding-bottom: 30px;
   color: #FFFFFF;
   margin-bottom: 20px;
 }
-.footer-join-content{
-  display: flex;
-}
+
 .footer-input-mail{
  padding-left: 16px;
   width: 358px;
@@ -1072,6 +1070,7 @@ padding-bottom: 30px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
   background-color:#2f303a;
+  color: var(--footer-color);
 }
 .footer-input-mail::placeholder{
 font-style: normal;
