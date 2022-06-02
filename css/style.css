@@ -219,17 +219,7 @@ body {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.header-tel-link {
-  display: block;
-  padding-top: 32px;
-  padding-bottom: 32px;
-  font-family: 'roboto',sans-serif;
-  font-style: normal;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-  color: var(--second-text-color);
-}
+
 .mail-tel{
 
 }
@@ -275,9 +265,7 @@ body {
   margin-bottom: 30px;
   text-align: center;
 }
-.section-1-title-span{
- padding-left: 35px;
-}
+
 .section-1-button {
   background-color: var(--accent-color);
   border-radius: 4px;
@@ -969,7 +957,6 @@ padding-bottom: 30px;
   letter-spacing: 0.03em;
   color: var(--footer-color);
   display: block;
-  
   
 }
 .footer-mail-item {
