@@ -1100,6 +1100,7 @@ color: rgba(255, 255, 255, 0.6);
   
 }
 .first-portfolio-list{
+ 
   margin-bottom: 50px;
   display: flex;
   justify-content: center;
@@ -1108,8 +1109,9 @@ color: rgba(255, 255, 255, 0.6);
 .fierst-portfolio-item:not( :last-child) {
   margin-right: 8px;
 }
+
 .portfolio-button {
-  
+  border: none;
   background-color: var(--btn-color-porfolio);
   border-radius: 4px;
   font-family: 'Roboto';
